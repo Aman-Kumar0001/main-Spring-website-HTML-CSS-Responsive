@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .3s linear;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+    box-shadow: 0 3px 5px #00000029;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo {
+    padding: 20px 20px 0px 20px;
+}
+
+.logo img {
+    margin: 0 auto;
+}
+
+.menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: none;
+    padding: 10px 20px 30px 20px;
+}
+
+.menu span {
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.menu span:hover {
+    color: white;
+    background-color: rgb(0, 162, 255);
+    transition: all 0.3s ease;
+}
+
+.bar {
+    margin-top: 12px;
+    color: white;
+    z-index: 1;
+}
+
+.bar select {
+    margin: 3px 0px;
+    border: none;
+    font-size: 17px;
+    outline: none;
+}
+
+.bar-select {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / .5);
+    transition: all .3s linear;
+    margin-top: -20px;
+
+}
+
+.bars {
+    margin: 10px;
+    padding: 8px;
+    font-size: 20px;
+    border: 1px;
+    cursor: pointer;
+    display: none;
+}
+
+.cross {
+    margin: 10px;
+    padding: 8px;
+    font-size: 20px;
+    border: 1px;
+    cursor: pointer;
+    display: none;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(sec-1-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    margin-top: 100px;
+}
+
+.section-1-title {
+    backdrop-filter: blur(2px);
+    padding: 113px 112px;
+}
+
+.paging {
+    padding: 15px;
+}
+
+.paging ul {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    justify-content: end;
+    gap: 4px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.paging-home {
+    color: rgb(0, 162, 255);
+}
+
+.section-2 {
+    margin: 20px;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.section-3 {
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-3-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.section-3-title span {
+    color: rgb(0, 162, 255);
+}
+
+.section-3-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.section-3-form input,
+textarea {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.section-3-form select {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.section-3-button {
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(0, 162, 255);
+    color: white;
+}
+
+.section-3-img {
+    margin-top: 30px;
+    width: 100%;
+    height: 350px;
+    background-color: #1094CD;
+    justify-content: end;
+    transition: all .3s linear;
+    min-width: 250px;
+}
+
+.section-3-text {
+    width: 200px;
+    line-height: 2;
+    margin-top: -250px;
+    margin-left: -20px;
+    background-color: white;
+    box-shadow: 0 3px 5px #00000029;
+    padding: 20px;
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-left {
+    margin: 20px;
+}
+
+.footer-right {
+    margin: 20px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social i {
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: white;
+    background-color: rgb(0, 162, 255);
+    transition: all 0.3s ease;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgb(74, 76, 78);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    nav {
+        flex-direction: column;
+    }
+
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 3px 5px #00000029;
+    }
+
+    .menu span {
+        border: 1px solid black;
+        padding: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .bar-select {
+        display: none;
+        flex-direction: column;
+    }
+
+    .section-1 {
+        margin-top: 10px;
+    }
+
+    .section-3 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
